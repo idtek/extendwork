@@ -188,6 +188,12 @@
     <ClCompile Include="..\CSArmature\utils\CSTransformHelp.cpp" />
     <ClCompile Include="..\CSArmature\utils\CSTweenFunction.cpp" />
     <ClCompile Include="..\CSArmature\utils\CSUtilMath.cpp" />
+    <ClCompile Include="..\LuaProxy\tolua\CCBProxy.cpp" />
+    <ClCompile Include="..\LuaProxy\tolua\LuaEventHandler.cpp" />
+    <ClCompile Include="..\LuaProxy\tolua\luaopen_LuaProxy.cpp" />
+    <ClCompile Include="..\LuaProxy\tolua\LuaTableView.cpp" />
+    <ClCompile Include="..\LuaProxy\ui\CursorTextField.cpp" />
+    <ClCompile Include="..\LuaProxy\ui\UIUtil.cpp" />
     <ClCompile Include="..\third_party_luabinding.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +263,23 @@
     <ClInclude Include="..\CSArmature\utils\CSTransformHelp.h" />
     <ClInclude Include="..\CSArmature\utils\CSTweenFunction.h" />
     <ClInclude Include="..\CSArmature\utils\CSUtilMath.h" />
+    <ClInclude Include="..\LuaProxy\tolua\CCBProxy.h" />
+    <ClInclude Include="..\LuaProxy\tolua\LuaEventHandler.h" />
+    <ClInclude Include="..\LuaProxy\tolua\luaopen_LuaProxy.h" />
+    <ClInclude Include="..\LuaProxy\tolua\LuaTableView.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCBAnimationManager.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCBProxy.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCControl.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCEditBox.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCGLProgram.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCHttpClient.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCScale9Sprite.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCScrollView.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCTableView.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CC_Extension.h" />
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CursorTextField.h" />
+    <ClInclude Include="..\LuaProxy\ui\CursorTextField.h" />
+    <ClInclude Include="..\LuaProxy\ui\UIUtil.h" />
     <ClInclude Include="..\third_party_luabinding.h" />
   </ItemGroup>
   <ItemGroup>

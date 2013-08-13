@@ -55,6 +55,15 @@
     <Filter Include="third_party\CSArmature\utils">
       <UniqueIdentifier>{81f71618-812a-42ac-aa4a-d1a48940547b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="third_party\LuaProxy">
+      <UniqueIdentifier>{7ddcc999-cb5c-4302-bf54-ca0873f58724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\LuaProxy\tolua">
+      <UniqueIdentifier>{4683d6f3-5bf2-455d-8abc-1af2dcefc5db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\LuaProxy\ui">
+      <UniqueIdentifier>{60a4e9ae-9971-4889-bc4a-8f4d198bea22}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\third_party_luabinding.cpp">
@@ -236,6 +245,24 @@
     </ClCompile>
     <ClCompile Include="..\CSArmature\utils\CSUtilMath.cpp">
       <Filter>third_party\CSArmature\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaProxy\tolua\CCBProxy.cpp">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaProxy\tolua\LuaEventHandler.cpp">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaProxy\tolua\luaopen_LuaProxy.cpp">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaProxy\tolua\LuaTableView.cpp">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaProxy\ui\CursorTextField.cpp">
+      <Filter>third_party\LuaProxy\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaProxy\ui\UIUtil.cpp">
+      <Filter>third_party\LuaProxy\ui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -439,6 +466,57 @@
     </ClInclude>
     <ClInclude Include="..\CSArmature\utils\CSUtilMath.h">
       <Filter>third_party\CSArmature\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CursorTextField.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\CCBProxy.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\LuaEventHandler.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\luaopen_LuaProxy.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\LuaTableView.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CC_Extension.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCBAnimationManager.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCBProxy.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCControl.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCEditBox.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCGLProgram.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCHttpClient.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCScale9Sprite.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCScrollView.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\tolua\tolua_CCTableView.h">
+      <Filter>third_party\LuaProxy\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\ui\UIUtil.h">
+      <Filter>third_party\LuaProxy\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaProxy\ui\CursorTextField.h">
+      <Filter>third_party\LuaProxy\ui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

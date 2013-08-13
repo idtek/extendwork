@@ -5,7 +5,7 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-
+#if USE_PROXY
 #include <map>
 #include <string>
 #include "Lua_extensions_CCB.h"
@@ -2141,3 +2141,4 @@ TOLUA_API int tolua_extensions_ccb_open(lua_State* tolua_S){
     tolua_endmodule(tolua_S);
 	return 1;
 }
+#endif//

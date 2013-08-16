@@ -38,10 +38,6 @@ local function showFont(ret, pFont)
     ret:removeChildByTag(kTagLabel4, true)
 
     local top = CCLabelTTF:create(pFont, pFont, 24)
-    --cc_timeval
-    
-    --local stringss = tostring(tt.tv_sec) .. tostring(tt.tv_usec)
-    --"alignment left"
     local left = CCLabelTTF:create("alignment left", pFont, fontSize,
                                    blockSize, kCCTextAlignmentLeft, verticalAlignment[vAlignIdx])
     local center = CCLabelTTF:create("alignment center", pFont, fontSize,

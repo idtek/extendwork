@@ -1,5 +1,6 @@
 #ifndef __TOLUA_CCHTTPCLIENT__
 #define __TOLUA_CCHTTPCLIENT__
+
 #if USE_PROXY
 extern "C" {
 #include "tolua++.h"

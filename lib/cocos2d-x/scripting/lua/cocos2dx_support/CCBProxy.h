@@ -1,5 +1,6 @@
 #ifndef __CCBPROXY_H_
 #define __CCBPROXY_H_
+
 #if USE_PROXY
 #include "cocos2d.h"
 #include "CCLuaEngine.h"
@@ -24,5 +25,6 @@ class CCBLayerLoader:public CCLayerLoader{
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(CCBLayerLoader, loader);
 };
-#endif//
+
+#endif//USE_PROXY
 #endif // __CCBPROXY_H_

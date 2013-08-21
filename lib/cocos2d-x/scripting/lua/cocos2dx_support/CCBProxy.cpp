@@ -21,9 +21,10 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-#if USE_PROXY
+
 #include "CCBProxy.h"
 
+#if USE_PROXY
 CCBReader* CCBProxy::createCCBreader()
 {
     CCNodeLoaderLibrary *ccNodeLoaderLibrary = CCNodeLoaderLibrary::sharedCCNodeLoaderLibrary();
@@ -158,4 +159,5 @@ void CCBProxy::setCallback(CCNode* pNode,int nHandle)
     
     
 }
+
 #endif//

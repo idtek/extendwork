@@ -412,7 +412,7 @@ TOLUA_API int luaopen_LuaProxy(lua_State* l){
 			tolua_function(l, "createAppHandler", tolua_LuaEventHandler_createAppHandler);
 #if USE_PROXY
 			tolua_function(l, "handleHttpRequest", tolua_LuaEventHandler_handleHttpRequest);
-#endif//
+#endif//USE_PROXY
 		tolua_endmodule(l);
 		tolua_cclass(l, "LuaTableView", "LuaTableView", "CCTableView", NULL);
 		tolua_beginmodule(l, "LuaTableView");

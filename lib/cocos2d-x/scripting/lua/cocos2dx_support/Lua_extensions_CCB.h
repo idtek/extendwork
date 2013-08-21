@@ -8,6 +8,7 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
+
 #if USE_PROXY
 TOLUA_API int tolua_extensions_ccb_open(lua_State* tolua_S);
 #endif//

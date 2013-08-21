@@ -164,6 +164,7 @@ LuaEventHandler * LuaEventHandler::handle(CCBAnimationManager *m, int handler){
 	m->setDelegate(this);
 	return this;
 }
+
 #if USE_PROXY
 LuaEventHandler * LuaEventHandler::handle(CCHttpRequest *req, int handler){
 	if(req){
@@ -179,6 +180,7 @@ LuaEventHandler * LuaEventHandler::handle(CCHttpRequest *req, int handler){
 	return this;
 }
 #endif//
+
 void LuaEventHandler::unhandle(){
 	if(_handler > 0){
 		toluafix_remove_function_by_refid(_lua, _handler);
@@ -361,6 +363,7 @@ void LuaEventHandler::keyMenuClicked(){
 		LuaStack->executeFunctionByHandler(_handler, 1);
 	}
 }
+
 #if USE_PROXY
 void LuaEventHandler::onHttpResponse(CCNode *sender, void *data){
 	if(_handler){
@@ -374,7 +377,8 @@ void LuaEventHandler::onHttpResponse(CCNode *sender, void *data){
 void LuaEventHandler::onHttpResponse(CCHttpClient *c, CCHttpResponse *res){
 	onHttpResponse(NULL, (void *)res);
 }
-#endif//
+
+#endif//USE_PROXY
 void LuaEventHandler::onIAPProductList(CCDictionary *prods){
 	if(_handler){
 		if(prods){	LuaStack->pushCCObject(prods, "CCDictionary");}

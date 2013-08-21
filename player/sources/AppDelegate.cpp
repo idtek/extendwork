@@ -58,10 +58,11 @@ bool AppDelegate::applicationDidFinishLaunching()
     // thrid_party
     luaopen_third_party_luabinding(L);
 
-    // CCBReader
 #if USE_PROXY
+    // CCBReader
     tolua_extensions_ccb_open(L);
-#endif//
+#endif//USE_PROXY
+
     // load framework
     if (m_projectConfig.isLoadPrecompiledFramework())
     {

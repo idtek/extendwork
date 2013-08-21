@@ -1,9 +1,58 @@
-﻿Build started 2013-8-13 11:45:08.
-     1>Project "E:\work\quick-cocos2d-x\lib\lua_extensions\proj.win32\lua_extensions_2010.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\lua_extensions_2010.lastbuildstate".
-     1>Done Building Project "E:\work\quick-cocos2d-x\lib\lua_extensions\proj.win32\lua_extensions_2010.vcxproj" (clean target(s)).
+﻿Build started 2013-8-21 13:46:15.
+     1>Project "E:\work\quick-cocos2d-x\lib\lua_extensions\proj.win32\lua_extensions_2010.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\lua_extensions_2010.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\work\quick-cocos2d-x\lib\cocos2d-x\scripting\lua\luajit\include" /I"E:\work\quick-cocos2d-x\lib\lua_extensions" /I"E:\work\quick-cocos2d-x\lib\lua_extensions\zlib" /I"E:\work\quick-cocos2d-x\lib\lua_extensions\cjson" /I"E:\work\quick-cocos2d-x\lib\lua_extensions\filesystem" /I"E:\work\quick-cocos2d-x\lib\lua_extensions\socket" /I"E:\work\quick-cocos2d-x\lib\cocos2d-x\cocos2dx\platform\third_party\win32\zlib" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D GL_GLEXT_PROTOTYPES /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D CC_LUA_ENGINE_ENABLED=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /wd4996 /wd4244 /analyze- /errorReport:prompt ..\cjson\fpconv.c ..\cjson\lua_cjson.c ..\cjson\strbuf.c ..\filesystem\lfs.c ..\lua_extensions.c ..\socket\auxiliar.c ..\socket\except.c ..\socket\inet.c ..\socket\luasocket.c ..\socket\luasocket_buffer.c ..\socket\luasocket_io.c ..\socket\mime.c ..\socket\options.c ..\socket\select.c ..\socket\socket_scripts.c ..\socket\tcp.c ..\socket\timeout.c ..\socket\udp.c ..\socket\wsocket.c ..\zlib\lua_zlib.c
+         lua_zlib.c
+         wsocket.c
+         udp.c
+         timeout.c
+         tcp.c
+         socket_scripts.c
+         select.c
+         options.c
+         mime.c
+         luasocket_io.c
+         luasocket_buffer.c
+         luasocket.c
+         inet.c
+         except.c
+         auxiliar.c
+         lua_extensions.c
+         lfs.c
+         strbuf.c
+         lua_cjson.c
+     1>e:\work\quick-cocos2d-x\lib\lua_extensions\cjson\lua_cjson.c(492): warning C4018: '<' : signed/unsigned mismatch
+         fpconv.c
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"E:\work\quick-cocos2d-x\player\proj.win32\Debug\lua_extensions.lib" /NOLOGO Debug\fpconv.obj
+         Debug\lua_cjson.obj
+         Debug\strbuf.obj
+         Debug\lfs.obj
+         Debug\lua_extensions.obj
+         Debug\auxiliar.obj
+         Debug\except.obj
+         Debug\inet.obj
+         Debug\luasocket.obj
+         Debug\luasocket_buffer.obj
+         Debug\luasocket_io.obj
+         Debug\mime.obj
+         Debug\options.obj
+         Debug\select.obj
+         Debug\socket_scripts.obj
+         Debug\tcp.obj
+         Debug\timeout.obj
+         Debug\udp.obj
+         Debug\wsocket.obj
+         Debug\lua_zlib.obj
+         lua_extensions_2010.vcxproj -> E:\work\quick-cocos2d-x\player\proj.win32\Debug\lua_extensions.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\lua_extensions_2010.unsuccessfulbuild".
+         Touching "Debug\lua_extensions_2010.lastbuildstate".
+     1>Done Building Project "E:\work\quick-cocos2d-x\lib\lua_extensions\proj.win32\lua_extensions_2010.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:11.10

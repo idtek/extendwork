@@ -297,6 +297,7 @@ TOLUA_API int tolua_CC_Extension_open(lua_State* l){
 		tolua_constant(l, "kKeyboardReturnTypeSearch", kKeyboardReturnTypeSearch);
 		tolua_constant(l, "kKeyboardReturnTypeGo", kKeyboardReturnTypeGo);
 #endif
+
 #if USE_PROXY
 		tolua_cclass(l, "CCHttpClient", "CCHttpClient", "CCObject", NULL);
 		tolua_beginmodule(l, "CCHttpClient");
@@ -341,7 +342,8 @@ TOLUA_API int tolua_CC_Extension_open(lua_State* l){
 			tolua_function(l, "getErrorBuffer", tolua_CCHttpResponse_getErrorBuffer);
 			tolua_function(l, "setErrorBuffer", tolua_CCHttpResponse_setErrorBuffer);
 		tolua_endmodule(l);
-#endif//		
+#endif//USE_PROXY
+
 		tolua_cclass(l, "CCScale9Sprite", "CCScale9Sprite", "CCNode", NULL);
 		tolua_beginmodule(l, "CCScale9Sprite");
 			tolua_function(l, "create", tolua_CCScale9Sprite_create);

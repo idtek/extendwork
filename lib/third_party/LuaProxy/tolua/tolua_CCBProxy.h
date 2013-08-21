@@ -335,8 +335,9 @@ static int tolua_LuaEventHandler_createAppHandler(lua_State *l){
 	tolua_pushusertype(l, h, "LuaEventHandler");
 	return 1;
 }
-//LuaEventHandler::handleHttpRequest(CCHttpRequest *req)
+
 #if USE_PROXY
+//LuaEventHandler::handleHttpRequest(CCHttpRequest *req)
 static int tolua_LuaEventHandler_handleHttpRequest(lua_State *l){
 #ifndef TOLUA_RELEASE
 	tolua_Error err;
@@ -353,7 +354,8 @@ static int tolua_LuaEventHandler_handleHttpRequest(lua_State *l){
 	tolua_pushusertype(l, h, "LuaEventHandler");
 	return 1;
 }
-#endif//
+
+#endif//USE_PROXY
 //######################################## LuaTableView ##########################
 //LuaTableView::createWithHandler(LuaEventHandler *h, CCSize *s, CCNode *c = NULL)
 static int tolua_LuaTableView_createWithHandler(lua_State *l){

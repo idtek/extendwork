@@ -72,10 +72,12 @@ public:
 	LuaEventHandler * handle(int handler, bool multiTouches = false, int priority = 0, bool swallows = false);
 	// Handle for CCBAnimationManager with optional function
 	LuaEventHandler * handle(CCBAnimationManager *m, int handler = 0);
-	// Handle for CCHttpRequest with optional function
+
 #if USE_PROXY
+	// Handle for CCHttpRequest with optional function
 	LuaEventHandler * handle(CCHttpRequest *req, int handler = 0);
-#endif//
+#endif//USE_PROXY
+
 	inline void unhandle();
 	int getHandler();
 	LuaEventHandler * setTypename(const char *n);
@@ -117,12 +119,12 @@ public:
 	virtual void keyBackClicked();
 	virtual void keyMenuClicked();
 
-	// Http Event
 #if USE_PROXY
+	// Http Event
 	void onHttpResponse(CCNode *sender, void *data);
 	void onHttpResponse(CCHttpClient *c, CCHttpResponse *res);
-#endif//
-	
+#endif//USE_PROXY
+
 	void onIAPProductList(CCDictionary *prods);
 	void onIAPBuy(bool success, const char *key, const char *errMsg = NULL, int errCode = 0);
 	void onIAPRestore(CCArray *prodIds);
